@@ -634,10 +634,10 @@ h1 em {
 
 
 /* =========================================
-   ABOUT EDITORIAL SECTION
+   HISTORY EDITORIAL SECTION
 ========================================= */
 
-.about-section {
+.history-section {
   display: grid;
   grid-template-columns: 0.85fr 1.5fr;
   gap: 70px;
@@ -645,7 +645,7 @@ h1 em {
   background: #0b0b0a;
 }
 
-.about-heading h2 {
+.history-heading h2 {
   margin-top: 25px;
   font-family: "Oswald", sans-serif;
   font-size: clamp(42px, 4.5vw, 72px);
@@ -655,7 +655,7 @@ h1 em {
   text-transform: uppercase;
 }
 
-.about-accent-line {
+.history-accent-line {
   display: block;
   width: 45px;
   height: 3px;
@@ -663,11 +663,11 @@ h1 em {
   background: var(--gold-light);
 }
 
-.about-content {
+.history-content {
   min-width: 0;
 }
 
-.about-copy {
+.history-copy {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -675,22 +675,22 @@ h1 em {
   margin-bottom: 45px;
 }
 
-.about-copy .text-link {
+.history-copy .text-link {
   grid-column: 1 / -1;
 }
 
-.about-visuals {
+.history-visuals {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   gap: 14px;
 }
 
-.about-image {
+.history-image {
   position: relative;
   overflow: hidden;
 }
 
-.about-image img {
+.history-image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -698,11 +698,11 @@ h1 em {
   transition: transform 0.6s ease;
 }
 
-.about-image:hover img {
+.history-image:hover img {
   transform: scale(1.03);
 }
 
-.about-image::before {
+.history-image::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -721,13 +721,13 @@ h1 em {
     );
 }
 
-.about-image-secondary {
+.history-image-secondary {
   min-height: 300px;
   align-self: end;
   background: #171513;
 }
 
-.about-image-secondary::before {
+.history-image-secondary::before {
   background:
     radial-gradient(
       circle at 50% 35%,
@@ -741,7 +741,7 @@ h1 em {
     );
 }
 
-.about-image-label {
+.history-image-label {
   position: absolute;
   bottom: 22px;
   left: 22px;
@@ -752,7 +752,7 @@ h1 em {
   text-transform: uppercase;
 }
 
-.about-image-number {
+.history-image-number {
   position: absolute;
   top: 20px;
   right: 22px;
@@ -762,31 +762,31 @@ h1 em {
 }
 
 /* =========================================
-   ABOUT RESPONSIVE
+   HISTORY RESPONSIVE
 ========================================= */
 
 @media (max-width: 1000px) {
-  .about-section {
+  .history-section {
     grid-template-columns: 1fr;
     gap: 45px;
   }
 
-  .about-heading h2 {
+  .history-heading h2 {
     font-size: 64px;
   }
 }
 
 @media (max-width: 800px) {
-  .about-copy {
+  .history-copy {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .about-visuals {
+  .history-visuals {
     grid-template-columns: 1fr 1fr;
   }
   
-  .about-image img {
+  .history-image img {
     display: block;
     width: 100%;
     height: 100%;
@@ -794,26 +794,26 @@ h1 em {
     transition: transform 0.6s ease;
   }
 
-  .about-image:hover img {
+  .history-image:hover img {
     transform: scale(1.03);
   }
-  .about-image,
-  .about-image-secondary {
+  .history-image,
+  .history-image-secondary {
     min-height: 280px;
   }
 }
 
 @media (max-width: 520px) {
-  .about-heading h2 {
+  .history-heading h2 {
     font-size: 48px;
   }
 
-  .about-visuals {
+  .history-visuals {
     grid-template-columns: 1fr;
   }
 
-  .about-image,
-  .about-image-secondary {
+  .history-image,
+  .history-image-secondary {
     min-height: 320px;
   }
 }

@@ -40,40 +40,45 @@ export type EnquiryOption = {
 
 export const site = {
   brand: {
-    firstName: "DARMIAN",
-    lastName: "KINGSTON",
-    mark: "DK",
-    name: "Darmian Kingston",
-    shortName: "DK",
+    firstName: "JALANG'O",
+    lastName: "MWENYEWE",
+    mark: "JM",
+    name: "Jalang'o Mwenyewe",
+    shortName: "Jalas",
     favicon: "/favicon.svg",
   },
 
   seo: {
-    title: "Darmian Kingston — Entertainer, Creator & Entrepreneur",
+    title: "Jalang'o Mwenyewe — Creative Artist, Public Servant & Entrepreneur",
     description:
-      "The official digital home of Darmian Kingston — entertainer, creator and entrepreneur.",
-    url: "https://darmiankingston.com",
-    siteName: "Darmian Kingston",
+      "The official digital home of Mzee Jalang'o Mwenyewe — creative artist, public servant and entrepreneur.",
+    url: "https://jalango.com",
+    siteName: "Jalang'o Mwenyewe",
     locale: "en_KE",
     type: "website",
     keywords: [
-      "Darmian Kingston",
+      "Jalang'o",
+      "Jalas",
+      "Jalang'o Mwenyewe",
+      "Papa Shirandula",
+      "Bonga na Jalas",
+      "Mzee Jalang'o Mwenyewe",
       "Kenyan entertainer",
-      "Kenyan creator",
+      "Kenyan content creator",
       "Kenyan entrepreneur",
       "Kenyan comedian",
       "event host",
     ],
     image: {
       src: "/images/og-image.jpg",
-      alt: "Darmian Kingston",
+      alt: "Jalang'o Mwenyewe",
       width: 1200,
       height: 630,
     },
   },
 
   navigation: [
-    { label: "About", href: "#about" },
+    { label: "History", href: "#history" },
     { label: "Shows", href: "#shows" },
     { label: "Media", href: "#media" },
     { label: "Projects", href: "#projects" },
@@ -81,82 +86,82 @@ export const site = {
   ],
 
   hero: {
-    eyebrow: "Entertainer · Creator · Entrepreneur",
+    eyebrow: "Creative Artist · Public Servant · Entrepreneur",
     title: {
-      before: "More than",
-      middle: "entertainment.",
-      emphasis: "It's a movement.",
+      before: "More than a",
+      middle: "personality.",
+      emphasis: "He's a platform.",
     },
     description:
-      "The official digital home of Darmian Kingston. A storyteller, entertainer and creative force building experiences that connect, inspire and leave a lasting impression.",
+      "Felix Odiwuor, popularly known as Jalang'o, is a Kenyan creative artist, public servant and entrepreneur whose career spans acting, radio, comedy, digital media, brand partnerships and business. He currently serves as the Member of Parliament for Lang'ata Constituency.",
     primaryAction: {
-      label: "Book Darmian",
+      label: "Work with Jalang'o",
       href: "#contact",
     },
     secondaryAction: {
-      label: "Explore projects",
+      label: "Explore his projects",
       href: "#projects",
     },
     signature: {
-      mark: "DK",
-      text: "Creating impact\nbeyond the spotlight.",
+      mark: "Jalas",
+      text: "Driven by purpose\nCreating Opportunities",
     },
     portrait: {
-      src: "/images/dk.png",
-      alt: "Portrait of Darmian Kingston",
+      src: "/images/jalango.png",
+      alt: "Portrait of Jalang'o",
       number: "01",
       label: "Personal brand",
-      sideText: "EST. 2026",
+      sideText: "EST. 2007",
     },
   },
 
   stats: [
     {
-      number: "10+",
-      label: "Years in entertainment",
+      number: "20+",
+      label: "Years in the public domain",
     },
     {
-      number: "500+",
-      label: "Shows performed",
+      number: "7M+",
+      label: "Followers across social media",
     },
     {
-      number: "1M+",
-      label: "Audience across platforms",
+      number: "5",
+      label: "Corporate brand partnerships",
     },
     {
-      number: "Global",
-      label: "Audience and growing",
+      number: "3",
+      label: "Initiatives in Public service",
     },
   ] satisfies Stat[],
 
-  about: {
-    eyebrow: "01 / About",
+  history: {
+    eyebrow: "01 / History",
     title: {
       lines: [
         "A personal brand",
-        "with something",
-        "to say.",
+        "with Endless",
+        "possibllities.",
       ],
     },
     paragraphs: [
-      "Darmian Kingston is an entertainer, creator and entrepreneur building experiences that connect people, challenge perspectives and leave a lasting impression.",
-      "From the stage to the screen, every project is an opportunity to turn attention into meaningful impact.",
+      "Jalang'o started off as a fish seller in the shores of Ndhiwa beach in Homabay county. He moved to Nairobi in the early 2000s and joined the Nairobi drama as a comedian. He got a role to play in Papa Shirandula a famous Kenyan TV show which made him a sensational public figure.",
+      "This propelled him to Kiss FM, where he worked as a presenter, while building his personal ventures on the side. He launched his political career in 2022 and now serves as the honourable member of parliament for Lang'ata constituency.",
     ],
     link: {
-      label: "Discover the story",
+      label: "Work with Jalang'o",
       href: "#contact",
     },
     images: [
       {
-        src: "/images/about.png",
-        alt: "Darmian Kingston performing on stage",
-        label: "Live performance",
+        src: "/images/history.png",
+        alt: "Jalang'o on the shores of Ndhiwa beach, Homabay county",
+        label: "Humble beginnings",
         number: "01",
       },
       {
-        src: "/images/about2.png",
-        alt: "Darmian Kingston during a podcast conversation",
-        label: "The conversation",
+        src: "/images/history2.png",
+        alt: "Jalang'o in parliament representing the people of Lang'ata",
+        label: "Endless possibllities",
         number: "02",
       },
     ],
@@ -166,17 +171,17 @@ export const site = {
     eyebrow: "On stage",
     title: "Shows & appearances",
     action: {
-      label: "Request booking",
+      label: "Book Jalang'o",
       href: "#contact",
     },
     cards: [
       {
         number: "01",
         category: "Entertainment",
-        title: "Comedy, connection\nand unforgettable nights.",
+        title: "Comedy, drama\nand unforgettable moments.",
         description:
-          "Built for audiences, brands, festivals and private experiences.",
-        linkLabel: "Explore live entertainment",
+          "He has featured in Papa Shirandula, this, this, that and countless other entertaiing shows.",
+        linkLabel: "Watch on Youtube",
         backgroundImage: "/images/show.png",
       },
       {
@@ -184,27 +189,27 @@ export const site = {
         category: "Hosting",
         title: "Confident energy.\nSharp delivery.",
         description:
-          "Professional hosting for launches, events and conversations.",
-        linkLabel: "Explore hosting",
+          "Jalang'o hosts professional events, covering launches, conversations, advertising and more.",
+        linkLabel: "Book Jalang'o",
         backgroundImage: "/images/hosting.png",
       },
     ] satisfies Show[],
   },
 
   media: {
-    eyebrow: "From the archive",
+    eyebrow: "From the archives",
     title: {
       first: "Moments that",
       emphasis: "move people.",
     },
     description:
-      "Explore selected moments, conversations and creative projects from Darmian Kingston's journey.",
+      "Selected moments, conversations and creative projects from Jalang'o's journey.",
     featured: {
       number: "01",
-      category: "Featured film",
-      title: "The Kingston Sessions",
+      category: "Personal Conversations",
+      title: "Bonga na Jalas",
       image: "/images/media-feature.png",
-      alt: "Darmian Kingston during The Kingston Sessions",
+      alt: "Jalang'o during The Bonga na Jalas podcast",
       playLabel: "Play featured video",
     },
     items: [
@@ -230,10 +235,10 @@ export const site = {
   },
 
   projects: {
-    eyebrow: "Beyond the stage",
+    eyebrow: "Beyond entertainment",
     title: "Featured projects",
     description:
-      "Creative work, original formats and experiences built to connect with audiences beyond the spotlight.",
+      "Creative works and experiences structured to connect with communities and bring a positive impact.",
     items: [
       {
         category: "Live Show",
@@ -257,23 +262,23 @@ export const site = {
   },
 
   contact: {
-    eyebrow: "Let's work together",
+    eyebrow: "Work with Jalang'o",
     title: {
-      first: "Bring the",
+      first: "Bring your",
       emphasis: "vision to life.",
     },
     description:
-      "From live performances and brand partnerships to media collaborations, let's create something meaningful.",
-    email: "hello@darmiankingston.com",
-    availabilityLabel: "Availability",
+      "From live performances, brand partnerships and media collaborations to public service, work with Jalang'o to create something meaningful.",
+    email: "info@jalango.com",
+    availabilityLabel: "Available for",
     availability:
-      "Bookings · Partnerships · Collaborations",
+      "Event bookings · Barand partnerships · Media collaborations",
 
     form: {
-      headingNumber: "01 / Enquiry",
+      headingNumber: "01 / Work with Jalang'o",
       heading: "Start a conversation.",
       formspreeEndpoint: "https://formspree.io/f/xoevwzra",
-      subject: "New enquiry from Darmian Kingston website",
+      subject: "New enquiry from Jalang'o's website",
 
       fields: {
         name: {

@@ -213,7 +213,7 @@ function App() {
 
             <div className="hero-scroll">
               <span />
-              <p>Scroll to explore</p>
+              <p>Keep Scrolling</p>
             </div>
           </section>
 
@@ -230,23 +230,23 @@ function App() {
             ))}
           </section>
 
-          {/* ABOUT */}
+          {/* History */}
           <section
-            id="about"
-            className="split-section section-pad about-section"
+            id="history"
+            className="split-section section-pad history-section"
           >
-            <div className="about-heading">
+            <div className="history-heading">
               <p className="eyebrow">
-                {site.about.eyebrow}
+                {site.history.eyebrow}
               </p>
 
               <h2>
-                {site.about.title.lines.map(
+                {site.history.title.lines.map(
                   (line, index) => (
                     <React.Fragment key={line}>
                       {line}
                       {index <
-                        site.about.title.lines.length - 1 && (
+                        site.history.title.lines.length - 1 && (
                         <br />
                       )}
                     </React.Fragment>
@@ -254,12 +254,12 @@ function App() {
                 )}
               </h2>
 
-              <span className="about-accent-line" />
+              <span className="history-accent-line" />
             </div>
 
-            <div className="about-content">
-              <div className="about-copy">
-                {site.about.paragraphs.map((paragraph) => (
+            <div className="history-content">
+              <div className="history-copy">
+                {site.history.paragraphs.map((paragraph) => (
                   <p
                     className="body-copy"
                     key={paragraph}
@@ -270,20 +270,20 @@ function App() {
 
                 <a
                   className="text-link"
-                  href={site.about.link.href}
+                  href={site.history.link.href}
                 >
-                  {site.about.link.label}
+                  {site.history.link.label}
                   <ArrowUpRight size={16} />
                 </a>
               </div>
 
-              <div className="about-visuals">
-                {site.about.images.map((image, index) => (
+              <div className="history-visuals">
+                {site.history.images.map((image, index) => (
                   <div
-                    className={`about-image ${
+                    className={`history-image ${
                       index === 0
-                        ? "about-image-main"
-                        : "about-image-secondary"
+                        ? "history-image-main"
+                        : "history-image-secondary"
                     }`}
                     key={image.src}
                   >
@@ -292,11 +292,11 @@ function App() {
                       alt={image.alt}
                     />
 
-                    <span className="about-image-label">
+                    <span className="history-image-label">
                       {image.label}
                     </span>
 
-                    <span className="about-image-number">
+                    <span className="history-image-number">
                       {image.number}
                     </span>
                   </div>
