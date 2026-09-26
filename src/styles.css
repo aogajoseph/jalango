@@ -741,8 +741,21 @@ h1 em {
     );
 }
 
+.history-card-overlay { 
+  position: absolute; 
+  inset: 0; 
+  z-index: 1; 
+  background: linear-gradient( 
+    to top, 
+    rgba(0, 0, 0, 0.97) 0%, 
+    rgba(0, 0, 0, 0.72) 45%, 
+    rgba(0, 0, 0, 0.18) 100% 
+  ); transition: background 0.5s ease; pointer-events: none; 
+}
+
 .history-image-label {
   position: absolute;
+  z-index: 2;
   bottom: 22px;
   left: 22px;
   color: var(--text);
@@ -757,6 +770,7 @@ h1 em {
   top: 20px;
   right: 22px;
   color: var(--gold-light);
+  background-color: var(--line);
   font-family: "Oswald", sans-serif;
   font-size: 14px;
 }
@@ -891,14 +905,12 @@ h1 em {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.62) 45%,
-      rgba(0, 0, 0, 0.08) 100%
-    );
-  transition: background 0.5s ease;
+  background: linear-gradient( 
+    to top, 
+    rgba(0, 0, 0, 0.97) 0%, 
+    rgba(0, 0, 0, 0.72) 65%, 
+    rgba(0, 0, 0, 0.18) 100% 
+  ); transition: background 0.5s ease; pointer-events: none; 
 }
 
 .show-card-number {
@@ -906,6 +918,7 @@ h1 em {
   top: 28px;
   right: 28px;
   color: var(--gold-light);
+  background-color: var(--line);
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   letter-spacing: 0.08em;
@@ -1093,11 +1106,12 @@ h1 em {
 .media-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9),
-    transparent 65%
-  );
+  background: linear-gradient( 
+    to top, 
+    rgba(0, 0, 0, 0.97) 0%, 
+    rgba(0, 0, 0, 0.72) 45%, 
+    rgba(0, 0, 0, 0.18) 80% 
+  ); transition: background 0.5s ease; pointer-events: none; 
   z-index: -1;
 }
 

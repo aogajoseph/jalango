@@ -21,6 +21,7 @@ export type Show = {
   description: string;
   linkLabel: string;
   backgroundImage: string;
+  href: string;
 };
 
 export type MediaItem = {
@@ -80,7 +81,7 @@ export const site = {
 
   navigation: [
     { label: "History", href: "#history" },
-    { label: "On Stage", href: "#shows" },
+    { label: "Shows", href: "#shows" },
     { label: "Media", href: "#media" },
     { label: "Initiatives", href: "#initiatives" },
     { label: "Contact", href: "#contact" },
@@ -179,11 +180,12 @@ export const site = {
       {
         number: "01",
         category: "Entertainment",
-        title: "Comedy, drama\nand unforgettable moments.",
+        title: "Comedy, drama & the \nunforgettable moments",
         description:
           "Jalang’o has spent years creating memorable moments for different audiences.",
         linkLabel: "Watch on Youtube",
         backgroundImage: "/images/entertainment.png",
+        href: "https://www.youtube.com/watch?v=1fffs-hgYtU&t=9s",
       },
       {
         number: "02",
@@ -193,6 +195,7 @@ export const site = {
           "From corporate launches to live conversations and major events, Jalang’o brings presence and personality.",
         linkLabel: "Book Jalang'o",
         backgroundImage: "/images/hosting.png",
+        href: "#contact",
       },
     ] satisfies Show[],
   },
@@ -218,7 +221,7 @@ export const site = {
         number: "02",
         category: "Digital Media",
         title: "Jalang'o TV",
-        image: "/images/bonga-na-jalas.png",
+        image: "/images/bonga-na-jalas.jpg",
         alt: "Jalang'o during The Bonga na Jalas podcast",
         linkLabel: "Explore",
         ariaLabel: "Watch Bonga na Jalas on YouTube",
@@ -228,7 +231,7 @@ export const site = {
         number: "03",
         category: "Entrepreneurship",
         title: "Arena Media",
-        image: "/images/entrepreneurship.png",
+        image: "/images/entrepreneurship.jfif",
         alt: "Jalang'o signing a corporate deal",
         linkLabel: "Explore",
         ariaLabel: "Learn more about Arena Media",

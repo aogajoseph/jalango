@@ -110,7 +110,7 @@ function App() {
 
             <a
               className="button button-small"
-              href="#contact"
+              href="#footer"
               onClick={close}
             >
               {/* Book {site.brand.firstName} */}
@@ -293,13 +293,15 @@ function App() {
                       alt={image.alt}
                     />
 
+                    <span className="history-card-overlay" />
+
                     <span className="history-image-label">
                       {image.label}
                     </span>
 
-                    <span className="history-image-number">
+                    {/* <span className="history-image-number">
                       {image.number}
-                    </span>
+                    </span> */}
                   </div>
                 ))}
               </div>
@@ -348,9 +350,9 @@ function App() {
 
                   <div className="show-card-overlay" />
 
-                  <div className="show-card-number">
+                  {/* <div className="show-card-number">
                     {show.number}
-                  </div>
+                  </div> */}
 
                   <div className="show-card-content">
                     <span>{show.category}</span>
@@ -372,7 +374,9 @@ function App() {
 
                     <a
                       className="text-link"
-                      href="#contact"
+                      href={show.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {show.linkLabel}
                       <ArrowUpRight size={16} />
@@ -414,11 +418,11 @@ function App() {
                 >
                   <div className="media-image-overlay" />
 
-                  <span className="media-number">
+                  {/* <span className="media-number">
                     {site.media.featured.number}
-                  </span>
+                  </span> */}
 
-                  <button
+                  {/* <button
                     className="media-play"
                     aria-label={
                       site.media.featured.playLabel
@@ -428,7 +432,7 @@ function App() {
                       size={22}
                       fill="currentColor"
                     />
-                  </button>
+                  </button> */}
 
                   <div className="media-caption">
                     <span>
@@ -454,11 +458,11 @@ function App() {
                         backgroundImage: `url("${item.image}")`,
                       }}
                     >
-                      <span className="media-number">
+                      {/* <span className="media-number">
                         {item.number}
-                      </span>
+                      </span> */}
 
-                      <button
+                      {/* <button
                         className="media-play"
                         aria-label={item.ariaLabel}
                       >
@@ -466,7 +470,7 @@ function App() {
                           size={16}
                           fill="currentColor"
                         />
-                      </button>
+                      </button> */}
                     </div>
 
                     <div className="media-item-copy">
@@ -763,7 +767,7 @@ function App() {
         </main>
 
         {/* FOOTER */}
-        <footer className="footer section-pad">
+        <footer className="footer section-pad" id="footer">
           <div className="brand">
             <span className="brand-mark">
               {site.brand.mark}
