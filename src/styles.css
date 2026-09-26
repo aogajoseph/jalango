@@ -97,18 +97,87 @@ h1 em {
 ======================================== */
 
 .nav-wrap {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  padding: 30px max(6vw, 28px);
-  border-bottom: 1px solid #ffffff12;
+  width: 100%;
+  padding: 22px 5vw;
+
+  background: transparent;
+  border-bottom: 1px solid transparent;
+
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease,
+    padding 0.35s ease;
+
+  will-change: background-color, padding;
+}
+
+.nav-wrap.nav-scrolled {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  background: rgba(11, 11, 10, 0.88);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.nav-wrap .brand,
+.nav-wrap .nav,
+.nav-wrap .menu-button {
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.nav-wrap.nav-scrolled .brand {
+  transform: translateY(-1px);
+}
+
+.nav-wrap.nav-scrolled .nav {
+  transform: translateY(-1px);
+}
+
+.nav a {
+  position: relative;
+  transition:
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.nav a:not(.button)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 1px;
+
+  background: var(--gold-light);
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav a:not(.button):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .brand {
@@ -166,6 +235,10 @@ h1 em {
 .menu-button svg {
   width: 23px;
   height: 23px;
+}
+
+#home {
+  padding-top: 110px;
 }
 
 

@@ -69,11 +69,27 @@ function App() {
     }
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Seo />
       <div className="site-shell">
-        <header className="nav-wrap">
+        <header className={`nav-wrap ${isScrolled ? "nav-scrolled" : ""}`}>
           <a
             className="brand"
             href="#home"
