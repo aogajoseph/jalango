@@ -487,48 +487,48 @@ function App() {
             </div>
           </section>
 
-          {/* PROJECTS */}
+          {/* INITIATIVES */}
           <section
-            id="projects"
-            className="section-pad projects-section"
+            id="initiatives"
+            className="section-pad initiatives-section"
           >
             <div className="section-heading">
               <div>
                 <p className="eyebrow">
-                  {site.projects.eyebrow}
+                  {site.initiatives.eyebrow}
                 </p>
 
-                <h2>{site.projects.title}</h2>
+                <h2>{site.initiatives.title}</h2>
               </div>
 
-              <p>{site.projects.description}</p>
+              <p>{site.initiatives.description}</p>
             </div>
 
-            <div className="project-list">
-              {site.projects.items.map(
-                (project, index) => (
+            <div className="initiative-list">
+              {site.initiatives.items.map(
+                (initiative, index) => (
                   <article
-                    className="project-row"
-                    key={project.title}
+                    className="initiative-row"
+                    key={initiative.title}
                   >
-                    <span className="project-number">
+                    <span className="initiative-number">
                       {String(index + 1).padStart(2, "0")}
                     </span>
 
-                    <div className="project-content">
+                    <div className="initiative-content">
                       <span className="eyebrow">
-                        {project.category}
+                        {initiative.category}
                       </span>
 
-                      <h3>{project.title}</h3>
+                      <h3>{initiative.title}</h3>
 
-                      <p>{project.description}</p>
+                      <p>{initiative.description}</p>
                     </div>
 
                     <a
                       href="#contact"
-                      className="project-link"
-                      aria-label={`Explore ${project.title}`}
+                      className="initiative-link"
+                      aria-label={`Explore ${initiative.title}`}
                     >
                       <ArrowUpRight size={22} />
                     </a>

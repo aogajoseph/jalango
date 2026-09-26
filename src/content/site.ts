@@ -8,7 +8,7 @@ export type Stat = {
   label: string;
 };
 
-export type Project = {
+export type Initiative = {
   category: string;
   title: string;
   description: string;
@@ -79,9 +79,9 @@ export const site = {
 
   navigation: [
     { label: "History", href: "#history" },
-    { label: "Shows", href: "#shows" },
+    { label: "On Stage", href: "#shows" },
     { label: "Media", href: "#media" },
-    { label: "Projects", href: "#projects" },
+    { label: "Initiatives", href: "#initiatives" },
     { label: "Contact", href: "#contact" },
   ],
 
@@ -95,12 +95,12 @@ export const site = {
     description:
       "Felix Odiwuor, popularly known as Jalang'o, is a Kenyan creative artist, public servant and entrepreneur whose career spans acting, radio, comedy, digital media, brand partnerships and business. He currently serves as the Member of Parliament for Lang'ata Constituency.",
     primaryAction: {
-      label: "Work with Jalang'o",
-      href: "#contact",
+      label: "Learn More",
+      href: "#history",
     },
     secondaryAction: {
-      label: "Explore his projects",
-      href: "#projects",
+      label: "Explore initiatives",
+      href: "#initiatives",
     },
     signature: {
       mark: "Jalas",
@@ -125,11 +125,11 @@ export const site = {
       label: "Followers across social media",
     },
     {
-      number: "5",
+      number: "8",
       label: "Corporate brand partnerships",
     },
     {
-      number: "3",
+      number: "5",
       label: "Initiatives in Public service",
     },
   ] satisfies Stat[],
@@ -138,14 +138,14 @@ export const site = {
     eyebrow: "01 / History",
     title: {
       lines: [
-        "A personal brand",
-        "with Endless",
-        "possibllities.",
+        "A brand built",
+        "on possibllities.",
       ],
     },
     paragraphs: [
-      "Jalang'o started off as a fish seller in the shores of Ndhiwa beach in Homabay county. He moved to Nairobi in the early 2000s and joined the Nairobi drama as a comedian. He got a role to play in Papa Shirandula a famous Kenyan TV show which made him a sensational public figure.",
-      "This propelled him to Kiss FM, where he worked as a presenter, while building his personal ventures on the side. He launched his political career in 2022 and now serves as the honourable member of parliament for Lang'ata constituency.",
+      "Before the cameras, microphones and public life, Felix Odiwuor began his journey selling fish in Homa Bay before moving to Nairobi in the early 2000s to pursue entertainment. From the Kenya National Theatre to a breakthrough role in Papa Shirandula, he went from performing on stage to becoming a household name.",
+      
+      "He later built a successful career in radio while growing his work in comedy, business and digital media. In 2022, he entered public service and was elected Member of Parliament for Lang’ata Constituency. Today, his journey continues across media, business, public service and entrepreneurship."
     ],
     link: {
       label: "Work with Jalang'o",
@@ -168,7 +168,7 @@ export const site = {
   },
 
   shows: {
-    eyebrow: "On stage",
+    eyebrow: "02 / On stage",
     title: "Shows & appearances",
     action: {
       label: "Book Jalang'o",
@@ -180,16 +180,16 @@ export const site = {
         category: "Entertainment",
         title: "Comedy, drama\nand unforgettable moments.",
         description:
-          "He has featured in Papa Shirandula, this, this, that and countless other entertaiing shows.",
+          "Jalang’o has spent years creating memorable moments for different audiences.",
         linkLabel: "Watch on Youtube",
-        backgroundImage: "/images/show.png",
+        backgroundImage: "/images/entertainment.png",
       },
       {
         number: "02",
         category: "Hosting",
         title: "Confident energy.\nSharp delivery.",
         description:
-          "Jalang'o hosts professional events, covering launches, conversations, advertising and more.",
+          "From corporate launches to live conversations and major events, Jalang’o brings presence and personality.",
         linkLabel: "Book Jalang'o",
         backgroundImage: "/images/hosting.png",
       },
@@ -197,82 +197,82 @@ export const site = {
   },
 
   media: {
-    eyebrow: "From the archives",
+    eyebrow: "03 / From the archives",
     title: {
       first: "Moments that",
       emphasis: "move people.",
     },
     description:
-      "Selected moments, conversations and creative projects from Jalang'o's journey.",
+      "Conversations, appearances and moments that shaped Jalang’o's journey.",
     featured: {
       number: "01",
-      category: "Personal Conversations",
-      title: "Bonga na Jalas",
-      image: "/images/media-feature.png",
-      alt: "Jalang'o during The Bonga na Jalas podcast",
-      playLabel: "Play featured video",
+      category: "Public service",
+      title: "Connecting people",
+      image: "/images/public-service.png",
+      alt: "Jalang'o during a political rally",
+      playLabel: "Jalang'o during The Bonga na Jalas podcast",
     },
     items: [
       {
         number: "02",
-        category: "Behind the scenes",
-        title: "Behind the Laughs",
-        image: "/images/media-behind.png",
-        alt: "Behind the scenes with Darmian Kingston",
-        linkLabel: "Explore story",
-        ariaLabel: "Play Behind the Laughs video",
+        category: "Personal conversations",
+        title: "Bonga na Jalas",
+        image: "/images/bonga-na-jalas.png",
+        alt: "Jalang'o during The Bonga na Jalas podcast",
+        linkLabel: "Watch on youtube",
+        ariaLabel: "Play video",
       },
       {
         number: "03",
-        category: "Live performance",
-        title: "The Darmian Experience",
-        image: "/images/media-live.png",
-        alt: "Darmian Kingston performing live",
-        linkLabel: "View performance",
-        ariaLabel: "Play The Darmian Experience video",
+        category: "Entrepreneurship",
+        title: "Arena Media",
+        image: "/images/entrepreneurship.png",
+        alt: "Jalang'o signing a corporate deal",
+        linkLabel: "Explore",
+        ariaLabel: "Play video",
       },
     ] satisfies MediaItem[],
   },
 
-  projects: {
-    eyebrow: "Beyond entertainment",
-    title: "Featured projects",
+  initiatives: {
+    eyebrow: "04 / Beyond entertainment",
+    title: "Featured Initiatives",
     description:
-      "Creative works and experiences structured to connect with communities and bring a positive impact.",
+      "Ideas, partnerships and community efforts shaping Jalang’o’s work beyond entertainment.",
     items: [
       {
-        category: "Live Show",
-        title: "The Darmian Experience",
+        category: "Community Health",
+        title: "Lang'ata Medical Camps",
         description:
-          "A high-energy live entertainment experience built around comedy, conversation and culture.",
+          "A community health initiative providing free checkups, medicines, surgeries and transport for Lang'ata residents.",
       },
       {
-        category: "Podcast",
-        title: "The Kingston Sessions",
+        category: "Water Access",
+        title: "20 Boreholes for Lang'ata",
         description:
-          "Unfiltered conversations with creators, innovators and extraordinary personalities.",
+          "A partnership initiative announced to expand access to water across communities in Lang'ata.",
       },
       {
-        category: "Documentary",
-        title: "Behind the Laughs",
+        category: "Youth Opportunities",
+        title: "Lang’ata Youth Employment",
         description:
-          "A closer look at the stories, people and moments behind the public persona.",
+          "An initiative aimed at reserving 50% of opportunities at events, advertising and creative productions in Lang’ata for young people from the constituency.",
       },
-    ] satisfies Project[],
+    ] satisfies Initiative[],
   },
 
   contact: {
     eyebrow: "Work with Jalang'o",
     title: {
-      first: "Bring your",
-      emphasis: "vision to life.",
+      first: "Let’s make",
+      emphasis: "something happen",
     },
     description:
-      "From live performances, brand partnerships and media collaborations to public service, work with Jalang'o to create something meaningful.",
+      "From events and brand partnerships to media, appearances, collaborations and community initiatives, connect with Jalang’o and let’s build something meaningful.",
     email: "info@jalango.com",
     availabilityLabel: "Available for",
     availability:
-      "Event bookings · Barand partnerships · Media collaborations",
+      "Event bookings · Brand partnerships · Media Appearances · Creative collaborations · Community initiatives",
 
     form: {
       headingNumber: "01 / Work with Jalang'o",
@@ -294,7 +294,7 @@ export const site = {
           placeholder: "+254 7XX XXX XXX",
         },
         enquiryType: {
-          label: "Enquiry type",
+          label: "Select",
           placeholder: "Select an option",
           options: [
             {
@@ -314,6 +314,10 @@ export const site = {
               label: "Creative collaboration",
             },
             {
+              value: "Community Initiative",
+              label: "Community initiative",
+            },
+            {
               value: "Other",
               label: "Other",
             },
@@ -328,11 +332,11 @@ export const site = {
         },
         message: {
           label: "Tell us more",
-          placeholder: "Share the details of your enquiry...",
+          placeholder: "Share the details of your request...",
         },
       },
 
-      submitLabel: "Send enquiry",
+      submitLabel: "Submit",
       submittingLabel: "Sending...",
       successMessage:
         "Enquiry sent successfully. We'll be in touch shortly.",
