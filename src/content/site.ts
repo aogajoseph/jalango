@@ -31,6 +31,7 @@ export type MediaItem = {
   alt: string;
   linkLabel: string;
   ariaLabel: string;
+  href: string;
 };
 
 export type EnquiryOption = {
@@ -93,7 +94,7 @@ export const site = {
       emphasis: "He's a platform.",
     },
     description:
-      "Felix Odiwuor, popularly known as Jalang'o, is a Kenyan creative artist, public servant and entrepreneur whose career spans acting, radio, comedy, digital media, brand partnerships and business. He currently serves as the Member of Parliament for Lang'ata Constituency.",
+      "Phelix Odiwuor, popularly known as Jalang'o, is a Kenyan creative artist, public servant and entrepreneur whose career spans acting, radio, comedy, digital media, brand partnerships and business. He currently serves as the Member of Parliament for Lang'ata Constituency.",
     primaryAction: {
       label: "Learn More",
       href: "#history",
@@ -143,7 +144,7 @@ export const site = {
       ],
     },
     paragraphs: [
-      "Before the cameras, microphones and public life, Felix Odiwuor began his journey selling fish in Homa Bay before moving to Nairobi in the early 2000s to pursue entertainment. From the Kenya National Theatre to a breakthrough role in Papa Shirandula, he went from performing on stage to becoming a household name.",
+      "Before the cameras, microphones and public life, Phelix Odiwuor began his journey selling fish in Homa Bay before moving to Nairobi in the early 2000s to pursue entertainment. From the Kenya National Theatre to a breakthrough role in Papa Shirandula, he went from performing on stage to becoming a household name.",
       
       "He later built a successful career in radio while growing his work in comedy, business and digital media. In 2022, he entered public service and was elected Member of Parliament for Lang’ata Constituency. Today, his journey continues across media, business, public service and entrepreneurship."
     ],
@@ -215,12 +216,13 @@ export const site = {
     items: [
       {
         number: "02",
-        category: "Personal conversations",
-        title: "Bonga na Jalas",
+        category: "Digital Media",
+        title: "Jalang'o TV",
         image: "/images/bonga-na-jalas.png",
         alt: "Jalang'o during The Bonga na Jalas podcast",
-        linkLabel: "Watch on youtube",
-        ariaLabel: "Play video",
+        linkLabel: "Explore",
+        ariaLabel: "Watch Bonga na Jalas on YouTube",
+        href: "https://www.youtube.com/@jalangotv1447",
       },
       {
         number: "03",
@@ -229,7 +231,8 @@ export const site = {
         image: "/images/entrepreneurship.png",
         alt: "Jalang'o signing a corporate deal",
         linkLabel: "Explore",
-        ariaLabel: "Play video",
+        ariaLabel: "Learn more about Arena Media",
+        href: "#",
       },
     ] satisfies MediaItem[],
   },
@@ -262,7 +265,7 @@ export const site = {
   },
 
   contact: {
-    eyebrow: "Work with Jalang'o",
+    eyebrow: "05 / Work with Jalang'o",
     title: {
       first: "Let’s make",
       emphasis: "something happen",
@@ -348,23 +351,23 @@ export const site = {
   socialLinks: [
     {
       label: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/jalangoo/",
     },
     {
       label: "YouTube",
-      href: "#",
+      href: "https://www.youtube.com/@jalangotv1447",
     },
     {
       label: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/MzeeJalangoMwenyewe",
     },
     {
       label: "TikTok",
-      href: "#",
+      href: "https://www.tiktok.com/@jalangoo",
     },
   ] satisfies SocialLink[],
 
   footer: {
-    copyrightName: "Darmian Kingston",
+    copyrightName: "Jalang'o Mwenyewe",
   },
 } as const;

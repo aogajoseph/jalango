@@ -113,7 +113,8 @@ function App() {
               href="#contact"
               onClick={close}
             >
-              Book {site.brand.firstName}
+              {/* Book {site.brand.firstName} */}
+              Connect
               <ArrowUpRight size={15} />
             </a>
           </nav>
@@ -474,8 +475,11 @@ function App() {
                       <h3>{item.title}</h3>
 
                       <a
-                        href="#contact"
+                        href={item.href}
                         className="text-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={item.ariaLabel}
                       >
                         {item.linkLabel}
                         <ArrowUpRight size={15} />
@@ -785,6 +789,8 @@ function App() {
                   href={social.href}
                   aria-label={social.label}
                   key={social.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {iconMap[
                     social.label as keyof typeof iconMap
