@@ -702,7 +702,7 @@ function App() {
                   </select>
                 </label>
 
-                {enquiryType === "booking" && (
+                {enquiryType === "Event Booking" && (
                   <>
                     <label>
                       {

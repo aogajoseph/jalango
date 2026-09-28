@@ -95,7 +95,7 @@ export const site = {
       emphasis: "He's a platform.",
     },
     description:
-      "Phelix Odiwuor, popularly known as Jalang'o, is a Kenyan creative artist, public servant and entrepreneur whose career spans acting, radio, comedy, digital media, brand partnerships and business. He currently serves as the Member of Parliament for Lang'ata Constituency.",
+      "Phelix Odiwuor, popularly known as Jalang'o, is a Kenyan actor, radio presenter, content creator, brand ambassador, public servant and entrepreneur. He currently serves as the Member of Parliament for Lang'ata Constituency.",
     primaryAction: {
       label: "Learn More",
       href: "#history",
@@ -145,9 +145,9 @@ export const site = {
       ],
     },
     paragraphs: [
-      "Before the cameras, microphones and public life, Phelix Odiwuor began his journey selling fish in Homa Bay before moving to Nairobi in the early 2000s to pursue entertainment. From the Kenya National Theatre to a breakthrough role in Papa Shirandula, he went from performing on stage to becoming a household name.",
+      "Before the cameras and public life, Phelix Odiwuor began his journey selling fish in Homa Bay before moving to Nairobi in the early 2000s to pursue entertainment. From the Kenya National Theatre to a breakthrough role in Papa Shirandula, he went from performing on stage to becoming a household name - Jalang'o.",
       
-      "He later built a successful career in radio while growing his work in comedy, business and digital media. In 2022, he entered public service and was elected Member of Parliament for Lang’ata Constituency. Today, his journey continues across media, business, public service and entrepreneurship."
+      "He later built a successful career in radio while growing his work in comedy, business and digital media. In 2022, he entered public service and was elected Member of Parliament for Lang’ata Constituency. Today, his journey continues across media, public service and entrepreneurship."
     ],
     link: {
       label: "Work with Jalang'o",
@@ -207,7 +207,7 @@ export const site = {
       emphasis: "move people.",
     },
     description:
-      "Conversations, appearances and moments that shaped Jalang’o's journey.",
+      "Moments and appearances that shaped Jalang’o's journey.",
     featured: {
       number: "01",
       category: "Public service",
@@ -274,14 +274,14 @@ export const site = {
       emphasis: "something happen",
     },
     description:
-      "From events and brand partnerships to media, appearances, collaborations and community initiatives, connect with Jalang’o and let’s build something meaningful.",
+      "From events and brand partnerships to media, appearances, collaborations and community initiatives, connect with Jalang’o and build something meaningful.",
     email: "info@jalango.com",
     availabilityLabel: "Available for",
     availability:
-      "Event bookings · Brand partnerships · Media Appearances · Creative collaborations · Community initiatives",
+      "Events · Partnerships · Appearances · Collaborations · Community initiatives",
 
     form: {
-      headingNumber: "01 / Work with Jalang'o",
+      headingNumber: "05 / Work with Jalang'o",
       heading: "Start a conversation.",
       formspreeEndpoint: "https://formspree.io/f/xoevwzra",
       subject: "New enquiry from Jalang'o's website",
